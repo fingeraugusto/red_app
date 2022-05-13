@@ -14,7 +14,7 @@ def main() -> None:
     gas = ct.Solution("gri30.xml")
     fuel = "CH4"
     oxdyzer = "O2:1.0,N2:3.76"
-    dir_to_save = "C:\\Users\\1511 IRON\\Desktop\\Pós\\Doutorado\\PapersToBe\\Virtual_N_HEP\\red_teste4\\"
+    dir_to_save = "directory_to_save\\"
 
     # set all T, P, PHI conditions for each type of model. If you do not want to run one type of model, just
     # leave the list empty. It will start with the IDT whch is faster and will move to LFS.

@@ -110,17 +110,3 @@ def get_state(files_dir: str) -> Generator[Tuple[float, float, List[float]], Non
         for state in all_state:
             yield state[0], state[1], state[2:], is_mass_fraction
 
-
-
-
-if __name__ == "__main__":
-    dir = "C:\\Users\\1511 IRON\\Desktop\\Pós\\Doutorado\\PapersToBe\\Virtual_N_HEP\\red_teste2\\Homework_assignment_FPFlame_phi=0.7_(-)radiation_(-)Soret.csv"
-    dir_to_save = "C:\\Users\\1511 IRON\\Desktop\\Pós\\Doutorado\\PapersToBe\\Virtual_N_HEP\\red_teste4\\LFS_300.0_1.00_1.0.csv"
-    a = load_solution_from_csv_file(dir_to_save)
-    print(a[0])
-
-    # for a in get_TPY_state("C:\\Users\\1511 IRON\\Desktop\\Pós\\Doutorado\\PapersToBe\\Virtual_N_HEP\\DET_SOLUTION_DATA\\"):
-    #     print(a[2])
-    #     aa = input()
-    # aux = load_solution_from_txt_file("C:\\Users\\1511 IRON\\Desktop\\Pós\\Doutorado\\PapersToBe\\Virtual_N_HEP\\DET_SOLUTION_DATA\\600.0_1.0_1.0.txt")
-    # print(aux[1,:])

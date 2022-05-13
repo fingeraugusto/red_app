@@ -42,15 +42,3 @@ class ReductionMethod:
                 return 
         
         return final_red, ind_red_mechs
-
-
-
-if __name__ == "__main__":
-    gas = ct.Solution("POLIMI_TOT_NOX_1412.CKI.yaml")
-    print(gas.n_species)
-    # a = input()
-    dir = "C:\\Users\\1511 IRON\\Desktop\\Pós\\Doutorado\\PapersToBe\\Virtual_N_HEP\\red_teste2\\"
-    red = ReductionMethod(gas, det_dir=dir)
-    f, r = red.run_reduction("DRGEP", 0.05, ["CO2", "OH"])
-    print(f)
-    print(len(f))

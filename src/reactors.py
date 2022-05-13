@@ -294,27 +294,3 @@ class LFSReactor:
 
         return Su0, states, header
 
-
-
-
-
-
-def main():
-    gas = ct.Solution("gri30.xml")
-    fuel = "CH4"
-    oxi = "O2:1.0,N2:3.76"
-    gas.set_equivalence_ratio(1.0, fuel, oxi)
-    gas.TP = 1500.0, ct.one_atm
-    dir_to_save = "C:\\Users\\1511 IRON\\Desktop\\Pós\\Doutorado\\PapersToBe\\Virtual_N_HEP\\red_teste4\\"
-
-    # r = LFSReactor()
-    # Su0 = r.solve(gas, path_to_save=dir_to_save)
-
-    r = IDTReactor()
-    # idt = r.get_idt(gas)
-    # print(idt)
-    idt, states, header = r.solve(gas, path_to_save=dir_to_save)
-
-
-if __name__ == "__main__":
-    main()

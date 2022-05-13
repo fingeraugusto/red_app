@@ -107,20 +107,3 @@ class MechGraph:
         return self.drgep_search(imp_list, threshold)
 
 
-
-
-
-
-if __name__ == "__main__":
-    gas = ct.Solution("gri30.xml")
-    a = MechGraph()
-    a.set_cantera_model(gas)
-    a.update_state(gas)
-    out = {}
-    r = a.drg_search(["H2"], 0.1)
-    print(r)
-    # for s in a.spc_rii:
-    #     print(f"{s} - {a.spc_rii[s]}")
-
-    
-    

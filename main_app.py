@@ -17,8 +17,8 @@ def main() -> None:
     # detailed mechanism
     detailed_gas = ct.Solution("gri30.xml")
 
-    # folder path (use \\ to separate te folders)
-    file_dir = "C:\\Users\\1511 IRON\\Desktop\\Pós\\Doutorado\\PapersToBe\\Virtual_N_HEP\\red_teste4\\"
+    # folder path (use \\ to separate the folders)
+    file_dir = "folder_path\\"
 
     # Reduction parameters
     threshold = 0.05
