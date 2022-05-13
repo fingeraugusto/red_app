@@ -1,4 +1,4 @@
-# Chemical Kinetcs Mechansms Reduction Framework
+# Chemical Kinetcs Mechanisms Reduction Framework
 
 This project presents a framework under development to produce reduced chemical kinetics mechanisms from canonical models, more specifically for thermal autoignition (IDT) and laminar flame speed (LFS).
 
