@@ -46,7 +46,7 @@ def main() -> None:
         gas.TP = T, P
 
         idt_reactor = IDTReactor()
-        idt, states, header = idt_reactor.solve(gas, path_to_save=dir_to_save)
+        idt, states, header = idt_reactor.solve(gas, path_to_save=dir_to_save, phi_for_file_name=phi)
     
     # for every conditon in the LFS list and run the model:
     gas.transport_model = "Mix"
@@ -58,7 +58,7 @@ def main() -> None:
         gas.TP = T, P
 
         lfs_reactor = LFSReactor()
-        lfs, states, header = lfs_reactor.solve(gas, path_to_save=dir_to_save)
+        lfs, states, header = lfs_reactor.solve(gas, path_to_save=dir_to_save, phi_for_file_name=phi)
     
     print("INFO: All cases solved!!")
 
